@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw           # this is the name i'll use in {{ source() }}
+    database: analytics  # our Snowflake database
+    schema: raw         # our Snowflake schema (raw layer)
+    tables:
+      - name: customers
+      - name: orders
